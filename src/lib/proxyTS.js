@@ -15,8 +15,9 @@ export async function proxyTs(url, headers, req, res) {
     path: uri.pathname + uri.search,
     method: req.method,
     headers: {
-      "User-Agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+      "Referer": "https://rapid-cloud.co/",
+      "Origin": "https://rapid-cloud.co",
       ...headers,
     },
   };
